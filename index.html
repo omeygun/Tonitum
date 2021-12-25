@@ -15,8 +15,8 @@
         <section class="header">
             <nav>
                 <a href="index.html"><img src="eduford_img/bxt_colorful.png" class="logo-biox"></a>
-                <div class="nav-links">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">About</a></li>
@@ -25,12 +25,59 @@
                         <li><a href="">Contact</a></li>
                     </ul>
                 </div>
-                <i class="fa fa-bars" aria-hidden="true"></i>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
             <div class="text-box">
                 <h1>The Phenomenology</h1>
                 <p>My Collection Of Wisdom</p>
                 <a href="" class="hero-btn">Visit Us To Know More</a>
+            </div>
+        </section>
+        <!-- Course -->
+        <section class="course">
+            <h1>Our Objectives</h1>
+            <p>To Pursue Philosophy. Philosophy is a combination of two Greek words, philein sophia, meaning lover of wisdom. In ancient times a lover of wisdom could be related to any area where intelligence was expressed.
+            </p>
+        
+            <div class="row">
+                <div class="course-col">
+                    <h3>Ethics</h3>
+                    <p>The study based on well-founded standards of right and wrong that prescribe what humans ought to do, usually in terms of rights, obligations, benefits to society, fairness, or specific virtues.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Epistemology</h3>
+                    <p>The study of knowledge, especially with regard to its methods, validity, and scope. Epistemology is the investigation of what distinguishes justified belief from opinion.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Metaphysics</h3>
+                    <p>The study of the first principles of things, including abstract concepts such as being, knowing, substance, cause, identity, time, and space.
+                    </p>
+                </div>
+            </div>
+        
+        </section>
+        <!-- Java script for toggle Menu -->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+        <!-- footer -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero atque accusamus totam ipsum dignissimos inventore excepturi culpa modi corrupti quia tempore blanditiis, officia earum quod magni quos, asperiores nihil porro!</p>
+            <div class="icons">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
             </div>
         </section>
     </body>

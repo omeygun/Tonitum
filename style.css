@@ -109,6 +109,7 @@ nav .fa{
         right: -200px;
         text-align: left;
         z-index: 2;
+        transition: 1s;
     }
     nav .fa{
         display: block;
@@ -123,4 +124,71 @@ nav .fa{
     .logo-biox{
         transform:scale(0.7);
     }
+}
+
+/* course */
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+ p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #DFDFF6;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.course col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*--------footer-------------*/
+
+.footer{
+    width: 60%;
+    text-align: center;
+    padding: 30px 0;
+    margin: auto;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa{
+    color: #8B7AB9;
+    margin: 0 13px;
+    cursor: 'pointer';
+    padding: 18px 0;
 }
