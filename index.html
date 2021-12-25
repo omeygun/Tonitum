@@ -62,10 +62,16 @@
             var navLinks = document.getElementById("navLinks");
 
             function showMenu(){
-                navLinks.style.right = "0";
+                navLinks.style.display = "block";
+                setTimeout(function(){
+                    navLinks.style.right = "0";
+                }, 1);
             }
             function hideMenu(){
                 navLinks.style.right = "-200px";
+                setTimeout(function(){
+                    navLinks.style.display = "none";
+                }, 1000);
             }
 
         </script>
