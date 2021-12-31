@@ -1,19 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
-        <title>
-            The Phenomenology
-        </title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
-
+        <title>blog</title>
     </head>
     <body>
-        free will lmao
+        <!-- <opening> -->
+            <section class="header-blog">
+                    <div class="nav-links-blog" id="navLinksBlog">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="#course">Objectives</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#footer">Contact</a></li>
+                        </ul>
+                    </div>
+            </section>
+        <!-- </opening> -->
+        <!-- carousel -->
+        <section>
+        <h1 style="text-align: center;">Recent blogs</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a href=""><h4>What is Machine Learning?</h4></a>
+                <img src="eduford_img/Kahntbookcover.jpg">
+            </div>
+            <div class="item">
+                <a href=""><h4>Hegelian Dialectic</h4></a>
+                <img src="eduford_img/Kahntbookcover.jpg">
+            </div>
+            <div class="item">
+                <a href=""><h4>Plato's best(and worst) ideas</h4></a>
+                <img src="eduford_img/Kahntbookcover.jpg">
+            </div>
+            <div class="item">
+                <a href=""><h4>The cost of philosophy</h4></a>
+                <img src="eduford_img/Kahntbookcover.jpg">
+            </div>
+            <div class="item">
+                <a href=""><h4>Gettier Problem</h4></a>
+                <img src="eduford_img/Kahntbookcover.jpg">
+            </div>
+            <div class="item">
+                <a href=""><h4>I am not a Brain</h4></a>
+                <img src="eduford_img/Kahntbookcover.jpg">
+            </div>
+        </div>
+        </section>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="OwlCarousel2-2.3.4//docs/assets/owlcarousel/owl.carousel.min.js"></script>
+        <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+        <script>
+            $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+            })
+        </script>
+        <!-- /carousel -->
+        <!-- footer -->
+        <section class="footer" id="footer">
+            <h4>Contact Me</h4>
+            <p>DM me on instagram. </p>
+            <div class="icons">
+                <a href="https://www.instagram.com/omeygunner/"><i class="fa fa-instagram"></i></a>
+            </div>
+        </section>
     </body>
 </html>
