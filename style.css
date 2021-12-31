@@ -275,10 +275,10 @@ h1{
 
 @media(max-width: 700px){
     .blog-button h1{
-        font-size: 15px;
+        font-size: 25px;
     }
     .blog-button:hover h1{
-        font-size: 20px;
+        font-size: 30px;
     }
 }
 
